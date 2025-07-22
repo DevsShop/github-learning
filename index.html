@@ -25,6 +25,10 @@
         overflow-x: auto;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
       }
+      p {
+        font-weight: 600;
+        line-height: 1.6;
+      }
     </style>
   </head>
   <body>
@@ -41,9 +45,7 @@
       <p>Initialized Git repository: <code>git init</code></p>
       <p>
         Commit any changes to the Stage:
-        <code>
-          git commit -m "(firstCode) I have added the first line of code"</code
-        >
+        <code> git commit -m "(mesgShort) Your message"</code>
       </p>
       <p>
         Track and commits the changes to local Repo:
@@ -51,6 +53,26 @@
       </p>
       <p>Check status of the changes: <code>git status</code></p>
       <p>Show the commit history of the repository: <code>git log</code></p>
+      <p>
+        Show the commit history in Oneline:
+        <code>git log --oneline</code>
+      </p>
+      <p>Show the commit history with reset: <code>git reflog</code></p>
+      <br />
+      <p>Git reset commit from stage: <code>git reset --hard [id]</code></p>
+      <p>
+        Remove commited file from Stage: <code>git rm --cached [filename]</code>
+      </p>
+      <p>
+        Remove & Delete commited file from Stage & Folder:
+        <code>git rm [filename]</code>
+      </p>
+      <p>
+        Ignore any file to track in Git:
+        <code>create a file named '.gitignore'</code> <br /><small
+          >and add the file name in the .gitignore file</small
+        >
+      </p>
     </div>
   </body>
 </html>
