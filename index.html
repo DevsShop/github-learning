@@ -4,12 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Git Learing</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 50px;
+        width: 1440px;
+        margin: 0 auto;
+      }
+      code {
+        background-color: #1e1e1e;
+        color: #d4d4d4;
+        padding: 0.5em 1em;
+        border-radius: 8px;
+        font-family: "Courier New", monospace;
+        font-size: 15px;
+        overflow-x: auto;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+    </style>
   </head>
   <body>
-    <h1>I am learning git!</h1>
-    <p>
-      Git is a distributed version control system that helps track changes in
-      source code during software development.
-    </p>
+    <h1>Git commands:</h1>
+    <div class="main-checklist">
+      <p>Version check: <code>git -v</code></p>
+      <br />
+      <p>Check User Name: <code>git config --get user.name</code></p>
+      <p>Check User Email: <code>git config --get user.email</code></p>
+      <br />
+      <p>Change User Email: <code>git config --global user.email</code></p>
+      <p>Change User Email: <code>git config --global user.email</code></p>
+      <br />
+      <p>Initialized Git repository: <code>git init</code></p>
+      <p>
+        Commit any changes to the Stage:
+        <code>
+          git commit -m "(firstCode) I have added the first line of code"</code
+        >
+      </p>
+      <p>
+        Track and commits the changes to local Repo:
+        <code>git add [file.Name]</code>
+      </p>
+      <p>Check status of the changes: <code>git status</code></p>
+      <p>Show the commit history of the repository: <code>git log</code></p>
+    </div>
   </body>
 </html>
