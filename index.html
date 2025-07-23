@@ -15,6 +15,10 @@
         width: 1440px;
         margin: 0 auto;
       }
+      .main-checklist {
+        column-count: 2;
+        column-gap: 30px;
+      }
       code {
         background-color: #1e1e1e;
         color: #d4d4d4;
@@ -36,12 +40,14 @@
     <div class="main-checklist">
       <p>Version check: <code>git -v</code></p>
       <br />
+      <h2>User info config</h2>
       <p>Check User Name: <code>git config --get user.name</code></p>
       <p>Check User Email: <code>git config --get user.email</code></p>
       <br />
       <p>Change User Email: <code>git config --global user.email</code></p>
       <p>Change User Email: <code>git config --global user.email</code></p>
       <br />
+      <h2>Git Initialization Commands</h2>
       <p>Initialized Git repository: <code>git init</code></p>
       <p>
         Commit any changes to the Stage:
@@ -52,6 +58,7 @@
         <code>git add [file.Name]</code>
       </p>
       <p>Check status of the changes: <code>git status</code></p>
+      <h2>History check</h2>
       <p>Show the commit history of the repository: <code>git log</code></p>
       <p>
         Show the commit history in Oneline:
@@ -59,6 +66,7 @@
       </p>
       <p>Show the commit history with reset: <code>git reflog</code></p>
       <br />
+      <h2>Restoration command</h2>
       <p>Git reset commit from stage: <code>git reset --hard [id]</code></p>
       <p>
         Remove commited file from Stage: <code>git rm --cached [filename]</code>
@@ -72,6 +80,36 @@
         <code>create a file named '.gitignore'</code> <br /><small
           >and add the file name in the .gitignore file</small
         >
+      </p>
+      <br />
+      <h2>Branching commands</h2>
+      <p>Check the current branch: <code>git branch</code></p>
+      <p>Check all branch list: <code>git branch --list</code></p>
+      <p>List all branches: <code>git branch -a</code></p>
+      <p>List all remote branches: <code>git branch -r</code></p>
+      <p>Check the current branch with details: <code>git branch -vv</code></p>
+      <p>Create a new branch: <code>git branch [branchName]</code></p>
+      <p>Switch to another branch: <code>git switch [branchName]</code></p>
+      <p>
+        Switch to another branch and create a new branch:
+        <code>git switch -b [branchName]</code>
+      </p>
+      <p>Delete a branch: <code>git branch -d [branchName]</code></p>
+      <p>Force delete a branch: <code>git branch -D [branchName]</code></p>
+      <p>
+        Rename a branch:
+        <code>git branch -m [oldBranchName] [newBranchName]</code>
+      </p>
+      <p>
+        Merge a branch to current branch: <code>git merge [branchName]</code>
+      </p>
+      <p>
+        Merge a branch to current branch with no fast forward:
+        <code>git merge --no-ff [branchName]</code>
+      </p>
+      <p>
+        Merge a branch to current branch with fast forward:
+        <code>git merge --ff [branchName]</code>
       </p>
     </div>
   </body>
